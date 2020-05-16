@@ -1,0 +1,24 @@
+<div class="flex lg:hidden">
+    <button id="button" class="text-6xl mt-4 ml-12 flex-grow-0"><i class="fa fa-bars"></i></button>
+</div>
+<div class="toggler lg:invisible">
+    <div id="effect" class="hidden">
+        <ul class="px-8">
+            <li class="border border-2 border-white px-4">
+        <%= link_to "buy properties", pages_buy_path, class: "text-5xl uppercase text-teal-700 font-semibold" %>
+                
+            </li>
+            <li class="border border-2 border-white px-4">
+            <%= link_to "rentals", '/', class: "text-5xl uppercase text-teal-700 font-semibold" %>
+            </li>
+            <li class="border border-2 border-white px-4">
+            <%= link_to "request listing", pages_request_listing_path, class:"btn capitalize text-5xl bg-teal-700 text-white font-semibold py-4 px-8 rounded" %>
+            </li>
+   
+        </ul>
+    </div>
+</div>
+
+<select name="effects" id="effectTypes" class="invisible">
+    <option value="slide">Slide</option>
+</select>
